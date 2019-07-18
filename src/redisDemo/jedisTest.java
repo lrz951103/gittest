@@ -32,6 +32,7 @@ public class jedisTest {
 		jedis.auth("123456");
 		jedis.set("k2", "world");
 		System.out.println(jedis.get("k1")+jedis.get("k2"));
+                System.out.println(jedis.get("k1")+jedis.get("k2"));
 		jedis.close();
 	}
 }
